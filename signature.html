@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firma Modulo Delega</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo del Negozio" class="logo">
+        <h1>Firma Modulo di Delega</h1>
+    </header>
+    <main>
+        <div class="signature-container">
+            <p><strong>Nome e Cognome del Ritirante:</strong> 
+                <span id="retrieverNameDisplay"></span> 
+                <span id="retrieverLastNameDisplay"></span>
+            </p>
+            <canvas id="signaturePad" width="600" height="200" style="border: 2px solid #ccc; border-radius: 5px;"></canvas>
+            <button type="button" onclick="clearSignature()">Pulisci Firma</button>
+            <button type="button" onclick="confirmSignature()">Conferma Firma</button>
+        </div>
+    </main>
+    <script src="signature.js"></script>
+</body>
+</html>

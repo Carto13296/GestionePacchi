@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riepilogo Modulo Delega</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo del Negozio" class="logo">
+            <img id="courierLogo" alt="Logo del Corriere" class="logo">
+        </div>
+        <h1>Riepilogo Modulo di Delega</h1>
+    </header>
+    <main>
+        <div class="summary-container">
+            <p><strong>Nome e Cognome Ritirante:</strong> <span id="retrieverNameDisplay"></span></p>
+            <p><strong>Corriere:</strong> <span id="courierDisplay"></span></p>
+            <p><strong>Numero Pacco:</strong> <span id="trackingNumberDisplay"></span></p>
+            <p><strong>Intestatario:</strong> <span id="recipientDisplay"></span></p>
+            <p><strong>Tipo Documento:</strong> <span id="documentTypeDisplay"></span></p>
+            <p><strong>Numero Documento:</strong> <span id="documentNumberDisplay"></span></p>
+            <p><strong>Scadenza Documento:</strong> <span id="documentExpiryDisplay"></span></p>
+            <canvas id="signatureCanvas" width="600" height="200" style="border: 1px solid black; margin-top: 20px;"></canvas>
+            <button onclick="printSummary()">Stampa Riepilogo</button>
+        </div>
+    </main>
+    <script src="summary.js"></script>
+</body>
+</html>

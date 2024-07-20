@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo Delega Ritiro Pacchi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo del Negozio" class="logo">
+        <h1>Modulo di Delega Ritiro Pacchi</h1>
+    </header>
+    <main>
+        <form id="delegationForm">
+            <div class="form-row">
+                <label for="courier">Corriere:</label>
+                <select id="courier" required>
+                    <option value="brt">BRT</option>
+                    <option value="inpost">InPost</option>
+                    <option value="poste-italiane">Poste Italiane</option>
+                    <option value="dhl">DHL</option>
+                    <option value="ups">UPS</option>
+                    <option value="fermo-point">Fermo Point</option>
+                    <option value="amazon">Amazon</option>
+                    <option value="gls">GLS</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="trackingNumber">Numero Pacco:</label>
+                <input type="text" id="trackingNumber" required>
+            </div>
+            <div class="form-row">
+                <label for="recipient">Intestatario:</label>
+                <input type="text" id="recipient" required>
+            </div>
+            <div class="form-row">
+                <label for="retrieverFirstName">Nome Ritirante:</label>
+                <input type="text" id="retrieverFirstName" required>
+            </div>
+            <div class="form-row">
+                <label for="retrieverLastName">Cognome Ritirante:</label>
+                <input type="text" id="retrieverLastName" required>
+            </div>
+            <div class="form-row">
+                <label for="documentType">Tipo Documento:</label>
+                <select id="documentType" required>
+                    <option value="carta-identita">Carta Identità</option>
+                    <option value="patente">Patente</option>
+                    <option value="passaporto">Passaporto</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="documentNumber">Numero Documento:</label>
+                <input type="text" id="documentNumber" required>
+            </div>
+            <div class="form-row">
+                <label for="documentExpiry">Scadenza Documento:</label>
+                <input type="date" id="documentExpiry" required>
+            </div>
+            <button type="button" onclick="submitForm()">Invia</button>
+        </form>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
